@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GYMRAT</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img src="pic/Gymrat.jpg" class="logo" />
+
+    <section>
+      <div class="content">
+        <h2>GYMRAT</h2>
+        <h2>GYMRAT</h2>
+      </div>
+    </section>
+    <div id="box"></div>
+
+    <div class="navbar">
+      <a onclick="showPopup('aboutPopup')">About</a>
+      <a onclick="showPopup('helpPopup')">Help</a>
+      <a onclick="showPopup('contactPopup')">Contact us</a>
+    </div>
+
+    <div id="aboutPopup" class="popup" style="z-index: 9999">
+      <strong>About</strong>
+      <br />
+      <br />
+      Gym Rat Fitness is your ultimate guide to a healthier, stronger, and more
+      confident you. We believe that fitness is not just about lifting weights,
+      it’s a lifestyle built on discipline, dedication, and growth. Our goal is
+      to help every member of our community reach their fitness goals through
+      personalized workout guides, proper nutrition advice, and continuous
+      motivation. Whether you’re just starting your journey or have been
+      training for years, Gym Rat Fitness offers the right tools and inspiration
+      to help you improve day by day. We aim to create a welcoming space where
+      everyone, regardless of experience level, can learn, train, and transform
+      themselves physically and mentally. Join us and start building the best
+      version of yourself.
+      <h1 class="1">One rep at a time!!!!</h1>
+    </div>
+
+    <div id="helpPopup" class="popup" style="z-index: 9999">
+      <strong>Help</strong>
+      <br />
+      <br />
+      Need assistance navigating our site or using our programs? We’re here to
+      help! In this section, you’ll find step-by-step guides, common questions,
+      and detailed instructions to make your experience smooth and enjoyable. If
+      you’re having trouble accessing workouts, finding the right plan for your
+      goals, or understanding specific exercises, check out our
+      <a href="" class="faq" style="color: black;"> FAQ </a> section for quick answers. For more
+      personal guidance, you can contact our support team anytime, we’ll be
+      happy to assist you with anything you need. Your fitness journey shouldn’t
+      be confusing or stressful. Our goal is to make sure you always have the
+      right information, clear instructions, and friendly support to help you
+      stay focused on what matters most your progress and results.
+    </div>
+
+    <div id="contactPopup" class="popup" style="z-index: 9999">
+      <strong>Contact Us</strong>
+      Get in Touch with the GYMRAT Team! We love hearing from our community!
+      Whether you have feedback, need personalized advice, or have a business
+      inquiry, we are available through multiple channels. You can connect with
+      us directly here: <br><br> | Email | gymrat@gmail.com | <br> <br> | Facebook | @gymrat | <br><br> | Instagram | @gymrat | <br><br> |
+      Telegram | @gymrat | 
+      <br> <br>Drop us a line—we look forward to helping you crush
+      your fitness goals!
+    </div>
+    <script>
+      function showPopup(id) {
+        document
+          .querySelectorAll(".popup")
+          .forEach((p) => p.classList.remove("show"));
+        document.getElementById(id).classList.toggle("show");
+      }
+
+      window.onclick = function (event) {
+        if (!event.target.matches(".navbar a")) {
+          document
+            .querySelectorAll(".popup")
+            .forEach((p) => p.classList.remove("show"));
+        }
+      };
+    </script>
+    <style>
+      .pampam {
+        margin-top: 10px;
+      }
+
+      h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+        color: #d6e2fa;
+      }
+
+      .para {
+        font-size: 20px;
+        margin-bottom: 50px;
+        color: #d6e2fa;
+      }
+
+      .nge {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .btn1 {
+        padding: 15px 40px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 2px solid #3a7bff;
+        transition: 0.3s;
+      }
+
+      .btn1 {
+        background: #3a7bff;
+        color: white;
+      }
+
+      .btn1:hover {
+        background: #1e5fff;
+      }
+    </style>
+
+    <div class="pampam">
+      <h1 style="text-align: center">
+        START YOUR<br />FITNESS JOURNEY <br />
+        HERE AT GYMRAT
+      </h1>
+      <p class="para" style="text-align: center">
+        Choose your workout and Be the Best Version of Your Self
+      </p>
+
+      <div class="nge">
+        <button class="btn1" onclick="window.location.href='#program'">
+          <a href="#program" style="text-decoration: none; color: white"
+            >Start Workout</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <main>
+      <button
+        id="program"
+        ;
+        class="tab-button"
+        data-target="Program"
+        style="margin-bottom: 25px; margin-left: 585px"
+      >
+        Program
+      </button>
+      <div class="button-container">
+        <button class="tab-button" data-target="chest">Chest</button>
+        <button class="tab-button" data-target="back">Back</button>
+        <button class="tab-button" data-target="leg">Leg</button>
+        <button class="tab-button" data-target="arm">Arm</button>
+      </div>
+
+      <div class="content-container">
+        <div id="chest" class="tab-content">
+          <div class="pointer-arrow"></div>
+          <div class="exercise-grid">
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 1.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid1.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 2.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid2.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 3.html">
+                  <video autoplay loop muted width="325px" ;>
+                    <source src="CHEST/Chest Click/vid3.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 4.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid4.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 5.html">
+                  <video autoplay loop muted width="325px" ;>
+                    <source src="CHEST/Chest Click/vid5.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 6.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid6.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 7.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid7.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 8.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid8.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 9.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid9.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 10.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid10.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 11.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid11.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 12.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid12.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 13.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid13.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 14.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid14.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 15.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid15.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 16.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid16.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 17.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid17.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 18.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid18.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 19.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid19.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 20.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid20.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 21.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid21.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 22.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid22.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 23.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid23.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="CHEST/Chest Click/vid1 copy 24.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="CHEST/Chest Click/vid24.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div id="back" class="tab-content">
+          <div class="pointer-arrow"></div>
+          <div class="exercise-grid">
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 1.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid1.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 2.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid2.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 3.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid3.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 4.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid4.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 5.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid5.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 6.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid6.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 7.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid7.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 8.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid8.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 9.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid9.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 10.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid10.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 11.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid11.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Back/Back Click/vid1 copy 12.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Back/Back Click/vid12.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div id="leg" class="tab-content">
+          <div class="pointer-arrow"></div>
+          <div class="exercise-grid">
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 1.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/Leg Click/vid1.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 2.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/Leg Click/vid2.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 3.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/Leg Click/vid3.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 4.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/Leg Click/vid4.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 5.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/Leg Click/vid5.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 6.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/Leg Click/vid6.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 7.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 8.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 9.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 10.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 11.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Leg/Leg Click/vid1 copy 12.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Leg/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div id="arm" class="tab-content">
+          <div class="pointer-arrow"></div>
+          <div class="exercise-grid">
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 1.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/Full-Arm Click/vid1.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 2.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/Full-Arm Click/vid2.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 3.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/Full-Arm Click/vid3.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 4.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/Full-Arm Click/vid4.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 5.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/Full-Arm Click/vid5.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 6.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/Full-Arm Click/vid6.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 7.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 8.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 9.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 10.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 11.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+            <div class="card">
+              <li>
+                <a href="Full-Arm/Full-Arm Click/vid1 copy 12.html">
+                  <video autoplay loop muted width="315px" ;>
+                    <source src="Full-Arm/" type="video/mp4" />
+                  </video>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.querySelectorAll(".tab-button");
+        // Select ALL content divs that are NOT the Program content div
+        const contents = document.querySelectorAll(".tab-content");
+        const arrow = document.querySelector(".pointer-arrow");
+        const buttonContainer = document.querySelector(".button-container");
+
+        // Function to calculate the center position of the active button
+        const updateArrowPosition = (activeButton) => {
+          // Find the button inside the .button-container that is active (not the 'Program' button)
+          const activeContainerButton = document.querySelector(
+            ".button-container .tab-button.active"
+          );
+
+          // If no container button is active, or the 'Program' button is active, hide the arrow
+          if (
+            !activeContainerButton ||
+            activeButton.getAttribute("data-target") === "Program"
+          ) {
+            arrow.style.left = "-100px"; // Move arrow far off-screen to hide it
+            return;
+          }
+
+          const buttonRect = activeContainerButton.getBoundingClientRect();
+          const containerRect = buttonContainer.getBoundingClientRect();
+
+          // Calculate the center of the button relative to the container
+          const buttonCenter =
+            buttonRect.left - containerRect.left + buttonRect.width / 2;
+
+          // Adjust for half the arrow's width (10px) to center it.
+          arrow.style.left = `${buttonCenter - 10}px`;
+        };
+
+        // Initial load: Set the arrow state (will be hidden since no tab is active by default after my change above)
+        updateArrowPosition(document.querySelector(".tab-button.active"));
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const targetId = button.getAttribute("data-target");
+            const targetContent = document.getElementById(targetId);
+
+            // Check if the clicked button's content is ALREADY visible
+            const isActive =
+              button.classList.contains("active") &&
+              targetContent &&
+              targetContent.classList.contains("active");
+
+            // 1. Hide ALL content and remove ALL active classes first
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            contents.forEach((content) => content.classList.remove("active"));
+
+            // 2. If the button was NOT already active, show its content
+            if (!isActive) {
+              // Activate the button
+              button.classList.add("active");
+
+              // Show the target content (only if it's not the 'Program' button)
+              if (targetContent) {
+                targetContent.classList.add("active");
+              }
+            }
+
+            // 3. Update the arrow position
+            updateArrowPosition(button);
+          });
+        });
+      });
+    </script>
+
+    <br /><br /><br /><br /><br />
+
+    <footer class="gym-footer">
+      <div class="footer-logo">
+        <div class="logo-circle">
+          <img
+            src="pic/Gymrat.jpg"
+            alt="GYM RAT FITNESS Logo"
+            style="margin-left: 547px"
+          />
+          <br />
+        </div>
+      </div>
+      <p class="yummy-text">DON'T STOP HANGGAT</p>
+      <p class="yummy-text">HINDI KAPA MASARAP!!!</p>
+
+      <div class="social-links">
+        <div class="social-item">
+          <i class="fab fa-facebook-f icon-bg"
+            ><img
+              src="pic/Facebook.png"
+              style="width: 50px; height: 50px; border-radius: 50px"
+          /></i>
+          <p>Gymrat</p>
+        </div>
+        <div class="social-item">
+          <i class="fab fa-instagram icon-bg"
+            ><img
+              src="pic/ig.jpg"
+              style="width: 50px; height: 50px; border-radius: 50px"
+          /></i>
+          <p>@gymrat</p>
+        </div>
+        <div class="social-item">
+          <i class="fab fa-telegram-plane icon-bg"
+            ><img
+              src="pic/tele.png"
+              style="width: 50px; height: 50px; border-radius: 50px"
+          /></i>
+          <p>@gymrrat</p>
+        </div>
+
+        <div class="social-item">
+          <i class="far fa-envelope icon-bg"
+            ><img
+              src="pic/email.png"
+              style="width: 50px; height: 50px; border-radius: 50px"
+          /></i>
+          <p style="margin-left: 40px">gymrat@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="description-text">
+        <p>
+          This website is dedicated to offering a well-designed gym program that
+          supports your fitness journey. It features your workout program plans,
+          exercise tutorials, and training tips to help you build muscle, lose
+          weight, and improve overall health. Whether you're a beginner or
+          advanced, the program is tailored to guide you safely and effectively.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
